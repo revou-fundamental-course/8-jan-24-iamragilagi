@@ -33,7 +33,7 @@ header {
 }
 
 span {
-    color: #FFA62B;
+    color: #3fc9f3;
 }
 
 .content-body {
@@ -42,7 +42,7 @@ span {
 }
 
 .content-body .card {
-    border: 4px dashed #FFA62B;
+    border: 4px dashed #93d9f5;
 }
 
 .content-body .card h3 {
@@ -83,17 +83,17 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    background-color: #FFA62B;
+    background-color: #e20606;
     color: #fff;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #ec9128;
+    background-color: #53e945;
 }
 
 button:active {
-    background-color: #FFA62B;
+    background-color: #752bff;
     transform: translateY(2px);
     box-shadow: 2px 2px #e4e4e4;
 }
