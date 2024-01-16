@@ -48,7 +48,7 @@ function hitungLuas() {
     result.setAttribute("readonly", "true");
 
     desc = document.createElement("p");
-    desc.innerText = `Maka Luas dari persegi tersebut ${luas}`;
+    desc.innerText = `Maka Luas dari persegi ialah ${luas}`;
 
     containerArea.append(heading, info, result, desc);
 }
@@ -72,7 +72,7 @@ function hitungKeliling() {
     result.setAttribute("readonly", "true");
 
     desc = document.createElement("p");
-    desc.innerText = `Maka Keliling dari persegi tersebut ${keliling}`;
+    desc.innerText = `Maka Keliling dari persegi ialah ${keliling}`;
 
     containerPerimeter.append(heading, info, result, desc);
 }
