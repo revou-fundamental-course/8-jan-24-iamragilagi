@@ -23,6 +23,16 @@ header {
 
 label {
     margin-top: 10px;
+    outline: none;
+    border-radius: 100px;
+    border: solid #6b6464;
+    padding: 10px;
+
+}
+
+#squareside:focus {
+    border: solid #0c0c0c;
+
 }
 
 button {
