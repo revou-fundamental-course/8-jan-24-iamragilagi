@@ -7,18 +7,30 @@
     <title>Katik</title>
 </head>
 <body>
+
     <header>
         <h1>Katik Kalkulator Matematik</h1>
         <h4>Welcome to Katik</h4>
         <p>Sebuah web sederhana yang berfungsi untuk menghitung keliling dan luas persegi sebagai bentuk mini project RevoU</p>
     </header>
-    <div input class="inputsection">
-        <label for="" id="lblsquareside">Hitung Luas Persegi</label>
-        <input type="number" id="squareside">
+
+    <div class="calculator">
+        <img src="https://upload.wikimedia.org/wikipedia/id/2/2d/Persegi.JPG" alt="Gambar Persegi">
+        <label for="sideLength">Panjang Sisi:</label>
+        <input type="number" id="sideLength" placeholder="Masukkan panjang sisi">
+        
+        <label for="calculationType">Pilih Perhitungan:</label>
+        <select id="calculationType">
+            <option value="luas">Luas</option>
+            <option value="keliling">Keliling</option>
+        </select>
+        
+        <button onclick="calculate()">Hitung</button>
+        
+        <div id="result"></div>
+        <div id="error" class="error"></div>
     </div>
-    <div class="buttons">
-        <button id="countbutton">Hitung</button>
-        <button id="resetbutton">Reset</button>
-    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

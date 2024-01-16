@@ -1,46 +1,28 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
+    background-color: #eeb2b2;
+    color: white;
     text-align: center;
+    padding: 1em;
 }
 
-header h1 {
-    color: rgb(99, 78, 78);
-    font-style: italic;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #7BD3EA;
-}
-
-header h4 {
-    margin-top: 50px;
-    font-size: larger;
-    color: black;
-}
-
-header p{
-    margin-top: -20px;
-    font-size: x-small;
-}
-
-.inputsection {
-    display: flex;
-    flex-direction: column;
+.calculator {
     text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
 }
-#squareside {
+
+.calculator img {
+    margin-bottom: 20px;
+}
+
+label {
     margin-top: 10px;
-    outline: none;
-    border-radius: 100px;
-    border: solid #6b6464;
-    padding: 10px;
-
-}
-
-#squareside:focus {
-    border: solid #0c0c0c;
-
 }
 
 button {
@@ -61,4 +43,9 @@ button:active {
     background-color: #075df1;
     transform: translateY(3px);
 
+}
+
+.error {
+    color: rgb(253, 5, 158);
+    margin-top: 10px;
 }
