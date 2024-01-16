@@ -1,14 +1,15 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+body {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #eeb2b2;
-    color: white;
     text-align: center;
-    padding: 1em;
+    background-color: #FFA62B;
+    padding: 20px 0;
+    color: white;
 }
 
 header h1 {
@@ -18,63 +19,132 @@ header h1 {
     background-color: #7BD3EA;
 }
 
-header h4 {
-    margin-top: 50px;
-    font-size: larger;
-    color: black;
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+} 
+
+.content-header {
+    text-align: center;
+    margin-bottom: 32px;
 }
 
-header p{
-    margin-top: -20px;
-    font-size: x-small;
+span {
+    color: #FFA62B;
 }
 
-.inputsection {
+.content-body {
     display: flex;
-    flex-direction: column;
+    gap: 20px;
+}
+
+.content-body .card {
+    border: 4px dashed #FFA62B;
+}
+
+.content-body .card h3 {
     text-align: center;
 }
 
-.img {
+.keterangan {
     display: flex;
-    justify-content: center;
+    gap: 16px;
 }
 
-#squareside {
-    margin-top: 10px;
-    outline: none;
-    border-radius: 100px;
-    border: solid #6b6464;
-    padding: 10px;
-
+form {
+    margin-top: 20px;
 }
 
-#squareside:focus {
-    border: solid #0c0c0c;
+label {
+    display: block;
+    margin-bottom: 8px;
+}
 
+.container-input {
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    flex-grow: 3;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 button {
-    background-color: #2554a7;
-    color: white;
+    flex-grow: 1;
+    padding: 8px;
     border: none;
-    border-radius: 8px;
-    padding: 10px 10px;
+    border-radius: 4px;
     cursor: pointer;
-
+    font-size: 16px;
+    background-color: #FFA62B;
+    color: #fff;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #6696e9;
+    background-color: #ec9128;
 }
 
 button:active {
-    background-color: #075df1;
-    transform: translateY(3px);
-
+    background-color: #FFA62B;
+    transform: translateY(2px);
+    box-shadow: 2px 2px #e4e4e4;
 }
 
-.error {
-    color: rgb(253, 5, 158);
-    margin-top: 10px;
+#resultCalculateArea, #resultCalculatePerimeter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+#resultCalculateArea input:focus , #resultCalculatePerimeter input:focus{
+    outline: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #FFA62B;
+    color: #fff;
+}
+
+/* Gaya untuk layar berukuran lebih kecil atau sama dengan 600px */
+@media only screen and (max-width: 600px) {
+    .content-body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .keterangan {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .container-input {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+}
+
+/* Gaya untuk layar berukuran antara 601px dan 900px */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .content-body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }
