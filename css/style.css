@@ -34,6 +34,12 @@ header p{
     flex-direction: column;
     text-align: center;
 }
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+
 #squareside {
     margin-top: 10px;
     outline: none;
@@ -66,4 +72,9 @@ button:active {
     background-color: #075df1;
     transform: translateY(3px);
 
+}
+
+.error {
+    color: rgb(253, 5, 158);
+    margin-top: 10px;
 }
