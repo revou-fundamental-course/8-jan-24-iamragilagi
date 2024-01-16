@@ -6,17 +6,16 @@ body {
 }
 
 header {
+    background-color: #eeb2b2;
+    color: white;
     text-align: center;
     background-color: #FFA62B;
     padding: 20px 0;
     color: white;
 }
 
-header h1 {
-    color: rgb(99, 78, 78);
-    font-style: italic;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #7BD3EA;
+.container {
+    margin: 20px;
 }
 
 .card {
