@@ -56,15 +56,15 @@ function hitungLuas() {
 function hitungKeliling() {
     containerPerimeter.innerHTML = "";
 
-    let panjangSisi = parseFloat(document.getElementById("kelilingPersegiInput").value);
+    let Sisi = parseFloat(document.getElementById("kelilingPersegiInput").value);
 
-    let keliling = 4 * panjangSisi;
+    let keliling = 4 * Sisi;
 
     heading = document.createElement("h4");
     heading.innerHTML = "Hasil";
 
     info = document.createElement("input");
-    info.value = `K = 4 x ${panjangSisi}`;
+    info.value = `K = 4 x ${Sisi}`;
     info.setAttribute("readonly", "true");
 
     result = document.createElement("input");
